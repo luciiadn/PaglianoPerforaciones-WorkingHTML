@@ -3,9 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="keywords" content="Perforaciones, servicios, riego, campo, sector agricola">
+    <meta name="description" content="Conoce los servicios que realizamos y las empresas que confiaron 
+        en nuestro trabajo">
+    <link rel="stylesheet" href="./boostrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="icon" href="./images/torrenegro.png">
+    <title>Pagliano Perforaciones</title>
 </head>
 <body>
+  <div class="sub-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-8">
+          <ul class="info">
+            <li><i class="fa fa-envelope"></i> paglianoperforaciones@gmail.com</li>
+            <li><i class="fa fa-map"></i> Tancacha, Córdoba</li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <ul class="social-links">
+            <li><a href="#" img src="./images/facebookpng.png" alt="facebook"></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="logo">
+      <img src="./images/logo.png" alt="logo">
+      <nav class="">
+        <ul class="navLinks">
+          <li><a href="./pages/information.html">Conocenos</a></li>
+          <li><a href="./pages/clients.html">Clientes</a></li>
+        </ul>
+      </nav>
+      <a href="./pages/contact.html" class="btn"><button>Contacto</button></a>
+    </div>
+  </header>
+
+
+  <section>
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/images/photo1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/photo2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/photo3.jpeg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="contact-form">
+        <h2>Contacto</h2>
+        <form action="procesar_formulario.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</footer>
+
+
+  
+
+ 
+      
+  
     
+
 </body>
 </html>
